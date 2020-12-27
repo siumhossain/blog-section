@@ -14,38 +14,92 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
-        <div class="container-fluid">
-            <a class="navbar-brand col-lg-2 p-1" href="#">Web Spider</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class=" col-lg-8 ">
-                    <from class="d-flex justify-content-center">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-info" type="submit">Search</button>
-        
-                    </from>
-                </div>
-                <div class="m-3 navbar-nav">
-                    <a class="nav-link" aria-current="page" href="#">WebSpider pro</a>
-                    <button type="button" class="btn btn-labeled btn-outline-warning">
-                        Login</button>
-                        
-                    <button type="button" class="btn btn-labeled btn-info m-1 p-1">
-                        Sign Up</button>
-                    
+      <div class="container-fluid">
+          <a class="navbar-brand col-lg-2 p-1" href="index.html">Web Spider</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class=" col-lg-8 ">
+                  <from class="d-flex justify-content-center">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-info" type="submit">Search</button>
+      
+                  </from>
+              </div>
+              <div class="m-3 navbar-nav">
+                  <a class="nav-link" aria-current="page" href="#">WebSpider pro</a>
+                  <button type="button" class="btn btn-labeled btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal" id="exampleModal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header text-center">
+                          
+                            <h1>Web Spider</h1>
+                          
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="d-flex flex-column justify-content-center">
+                            <button type="button" class="btn btn-primary"><i data-feather="facebook"></i>Continue with Facebook</button>
+                            
+                            <button type="button" class="btn bg-dark text-white mt-2"><i data-feather="at-sign"></i>Continue with google</button>
+                            <input class="form-control form-control-sm mt-2" type="text" placeholder="Email">
+                            <input type="password" class="form-control form-control-sm mt-2" type="text" placeholder="Password">
+
+                            
+                          </div>
+                          
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Login</button>
+                        </div>
+                      </div>
                     </div>
-                
-            </div>
-            
+                  </div>
+                      
+                      
+                  <button type="button" class="btn btn-labeled btn-info m-1 p-1" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      Sign Up</button>
+                      <div class="modal" id="exampleModal1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1>Web Spider</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="d-flex flex-column justify-content-center">
+                                <input class="form-control  mt-2" type="text" placeholder="Email">
+                                <input type="password" class="form-control  mt-2" type="text" placeholder="Password">
+                                <input type="password" class="form-control mt-2" type="text" placeholder=" Confirm Password">
+                              </div>
+                              
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-success">Submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  
+                  </div>
+              
+          </div>
+          
 
 
 
-        </div>
+      </div>
 
 
-    </nav>
+  </nav>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -54,6 +108,12 @@
     </nav> 
   <div class="row container-fluid">
     <h1>What is Python?</h1>
+    <p>
+      <h6>Author: <a href="#">Sium</a> <strong class="text-muted mx-3">View:2k+</strong></h6>
+      
+    </p>
+    
+    
     <p>
       Python is a flexible programming language that prioritizes the clarity and readability of code. A good choice for many software development use cases, Python is often used for scripting, automation, data analysis, machine learning, and back-end development. Popular libraries and frameworks include Django, Flask, NumPy, and scikit-learn.<br>
 
@@ -166,5 +226,9 @@ It is a long established fact that a reader will be distracted by the readable c
 
     <script src="js/bootstrap.min.js"></script>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace()
+    </script>
   </body>
 </html>
